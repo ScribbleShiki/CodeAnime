@@ -1,0 +1,12 @@
+.wrapper {
+    margin: 0 20px;
+}
+nav {
+    float: left;
+    background-color: rgba(159, 89, 107, 0.50);
+    width: 100%;
+}
+.nav-link {
+    list-style-type: none;
+    display: inline;
+}
