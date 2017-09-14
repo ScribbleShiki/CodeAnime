@@ -9,8 +9,8 @@
 
   adventure.run = true;
 
-  while (adventure.run === true) {
-    for (var i = 0; i < adventuregameSiteLog.length; i++) {
+  while (adventure.run) {
+    for (var i = 0; i < adventure.gameSiteLog.length; i++) {
       console.log(adventure.gameSiteLog[i]);
     }
   }
