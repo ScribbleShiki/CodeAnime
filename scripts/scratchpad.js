@@ -1,19 +1,17 @@
-(function() {
-  var x = "";
-  var y = "";
+(function () {
   var adventure = {
-    "run":false,
+    "run": false,
     "gameSiteLog": []
   }
 
-    gameSiteLog[0] = "Welcome to super fun building site adventure javascript edition";
-    gameSiteLog[1] = "You need to set your Adventurer's attributes to begin";
+  adventure.gameSiteLog[0] = "Welcome to super fun building site adventure javascript edition";
+  adventure.gameSiteLog[1] = "You need to set your Adventurer's attributes to begin";
 
-    adventure.run;
+  adventure.run = true;
 
-    while(adventure.run === true){
-      for (var i = 0; i < gameSiteLog.array.length; i++) {
-        
-      }  
+  while (adventure.run === true) {
+    for (var i = 0; i < adventuregameSiteLog.length; i++) {
+      console.log(adventure.gameSiteLog[i]);
     }
+  }
 })()
