@@ -5,14 +5,9 @@
     });
 
     /* users will intereract with a modal type message interface */
-    var modalBox = document.createElement("canvas");
-    modalBox.setAttribute("id", "questModal");
-    document.getElementById("quest").appendChild(modalBox);
-
     $("#wrapper").click(function buildQuestModal() {
-        var questModal = document.getElementById("questModal");
-        var questModalCtx = questModal.getContext("2d");
-        questModalCtx.fillStyle = "	#FF7F50";
-        questModalCtx.fillRect(0,0,200,200);
+        var modalBox = document.createElement("div");
+        modalBox.setAttribute("id", "questModal");
+        document.getElementById("quest").appendChild(modalBox);
     });
 })()
