@@ -13,17 +13,16 @@
     var createNew = function() {
       this.name = prompt("Please enter your name");
       this.dayNight(2) = ["day", "night"];
-      this.device(2) = ["moblie", "desktop"];
       this.validName = function () {
         if (!user.name === "")
           return true;
         else
           return false
       }
+      
+      return adventure.isValidUser = true;
     }
   }
-
-
 
   /* adventure text file */
   adventure.gameQuestLog[0] = "Welcome to super fun building site adventure javascript edition";
@@ -36,6 +35,7 @@
     for (var i = 0; i < adventure.gameQuestLog.length; i++) {
       console.log(adventure.gameQuestLog[i]);
     }
+    
     adventure.run = false;
   }
 })()

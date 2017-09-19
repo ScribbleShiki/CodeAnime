@@ -1,4 +1,6 @@
 (function () {
+    var questModal = document.getElementById("questModal");
+
     /* places a boundary for the content inside the page */
     var pageBoundary = $("#wrapper").click(function () {
         pageBoundary.css('border', "3px solid red");
@@ -8,6 +10,11 @@
     $("#wrapper").click(function buildQuestModal() {
         var modalBox = document.createElement("div");
         modalBox.setAttribute("id", "questModal");
-        document.getElementById("quest").appendChild(modalBox);
+        document.getElementById("questWrapper").appendChild(modalBox);
     });
+
+    /* if the modal exists give it a message */
+    if($(questModal)){
+        
+    }
 })()
