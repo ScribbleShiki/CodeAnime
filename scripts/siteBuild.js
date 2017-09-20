@@ -20,9 +20,4 @@
     _questIntro.addEventListener('click', function(){
 
     });
-
-    /* if the modal exists give it a message */
-    if($(_questModal)){
-
-    }
-})()
+})();
