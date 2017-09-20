@@ -25,7 +25,7 @@
 #wrapper{
     font-family: "DroidSerif", sans-serif;
     margin: 0 20px;
-    background-color: #000;
+    background-color: rgba(44, 44, 44, 0.2);
     color: #FFF;
 }
 
@@ -52,7 +52,7 @@ nav li{
                 -2px 0 #7b757b,
                 0 2px #424542;
     padding: 5px 10px;
-    margin: 50px 50px;
+    margin: 5px auto;
     background: #04009d;
     background: -moz-linear-gradient(top,  #04009d 0%, #06004d 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#04009d), color-stop(100%,#06004d));
@@ -67,6 +67,9 @@ nav li{
     -webkit-animation: initQuest 3s;
     -moz-animation: initQuest 3s;
     animation: initQuest 3s;
+    width: 80%;
+    height: 30%;
+    bottom: 0;
 }
 
 @-webkit-keyframes initQuest {
@@ -95,4 +98,8 @@ nav li{
     font-size: 20px;
     font-weight: normal;
     margin: 5px 0;
+}
+
+@media screen and (min-width: 768px){
+    
 }
