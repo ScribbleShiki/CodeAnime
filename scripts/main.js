@@ -1,11 +1,11 @@
 (function () {
-  var adventure = {
+  var _adventure = {
     "run": false,
     "gameQuestLog": [],
     "isValidUser": false
   }
 
-  var user = function (name, device, validName) {
+  var _user = function (name, device, validName) {
     name = this.name;
     device = this.device;
     validName = this.validName;
@@ -14,28 +14,28 @@
       this.name = prompt("Please enter your name");
       this.dayNight(2) = ["day", "night"];
       this.validName = function () {
-        if (!user.name === "")
+        if (!_user.name === "")
           return true;
         else
           return false
       }
       
-      return adventure.isValidUser = true;
+      return _adventure.isValidUser = true;
     }
   }
 
   /* adventure text file */
-  adventure.gameQuestLog[0] = "Welcome to super fun building site adventure javascript edition";
-  adventure.gameQuestLog[1] = "You need to set the site's basic attributes to begin";
+  _adventure.gameQuestLog[0] = "Welcome to super fun building site adventure javascript edition";
+  _adventure.gameQuestLog[1] = "You need to set the site's basic attributes to begin";
 
-  adventure.run = true;
+  _adventure.run = true;
 
-  /* game loops through messages and conditions inside modal (to be set to [i]) */
-  while (adventure.run) {
-    for (var i = 0; i < adventure.gameQuestLog.length; i++) {
-      console.log(adventure.gameQuestLog[i]);
+  /* site loops through messages and conditions inside modal */
+  while (_adventure.run) {
+    for (var i = 0; i < _adventure.gameQuestLog.length; i++) {
+      console.log(_adventure.gameQuestLog[i]);
     }
-    
-    adventure.run = false;
+
+    _adventure.run = false;
   }
 })()

@@ -68,7 +68,6 @@ nav li{
     -moz-animation: initQuest 3s;
     animation: initQuest 3s;
     width: 80%;
-    height: 30%;
     bottom: 0;
 }
 
@@ -101,5 +100,7 @@ nav li{
 }
 
 @media screen and (min-width: 768px){
-    
+    #questModal{
+        width: 50%;
+    }
 }
