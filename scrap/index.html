@@ -1,0 +1,37 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <a href="#" onclick="displayNextQuestion()">Next question</a>
+    <div id="questionOutput"></div>
+
+    <script>
+        function question(questionText, answer) {
+            this.questionText = questionText;
+            this.answer = answer;
+        }
+
+        var currentQuestionIndex = 0;
+        var questions = [new question('What colour is my hair?', 'green'), new question('What size are my shoes?', '10')]
+
+        function displayNextQuestion() {
+            var question = getNextQuestion();
+            document.getElementById('questionOutput').innerHTML = question.questionText;
+        }
+
+        function getNextQuestion() {
+            var question = questions[currentQuestionIndex];
+            currentQuestionIndex++;
+
+            if (currentQuestionIndex >= questions.length) {
+                currentQuestionIndex = 0;
+            }
+
+            return question;
+        }
+    </script>
+</body>
+
+</html>
