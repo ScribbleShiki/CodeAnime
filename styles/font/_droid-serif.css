@@ -1,0 +1,23 @@
+@font-face{
+    font-family: "droid-serif";
+    src: url("../../fonts/droid-serif/DroidSerif-Regular-webfont.woff") format('woff');
+}
+
+@font-face{
+    font-family: "droid-serif";
+    src: url("../../fonts/droid-serif/DroidSerif-Bold-Webfont.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: "droid-serif";
+    src: url("../../fonts/droid-serif/DroidSerif-BoldItalic-Webfont.woff") format('woff'); 
+    font-weight: bold;
+    font-style: italic
+}
+
+@font-face{
+    font-family: "droid-serif";
+    src: url("../../fonts/droid-serif/DroidSerif-Italic-Webfont.woff") format('woff');
+    font-style: italic;
+}

@@ -1,32 +1,16 @@
-@font-face{
-    font-family: "DroidSerif";
-    src: url("../fonts/DroidSerif-Regular-webfont.woff") format('woff');
+@import url("font/_droid-serif.css");
+@import url("font/_ffvii.css");
+
+body {
+    font-family: "droid-serif", sans-serif;
 }
 
-@font-face{
-    font-family: "DroidSerif";
-    src: url("../fonts/DroidSerif-Bold-Webfont.woff") format('woff');
-    font-weight: bold;
-}
-
-@font-face{
-    font-family: "DroidSerif";
-    src: url("../fonts/DroidSerif-BoldItalic-Webfont.woff") format('woff'); 
-    font-weight: bold;
-    font-style: italic
-}
-
-@font-face{
-    font-family: "DroidSerif";
-    src: url("../fonts/DroidSerif-Italic-Webfont.woff") format('woff');
-    font-style: italic;
-}
-
-#wrapper{
-    font-family: "DroidSerif", sans-serif;
+.card-wrapper{
     margin: 10px 20px 0;
     background-color: rgba(44, 44, 44, 0.2);
     color: #FFF;
+    border: 1px solid #666;
+    border-radius: 2px 2px 20px 2px;
 }
 
 nav{
@@ -42,6 +26,13 @@ nav li{
     color: #fff;
 }
 
+#questWrapper{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+}
+
 #questModal{
     border: 1px solid #424542;
     box-shadow: 1px 1px #e7dfe7,
@@ -52,7 +43,7 @@ nav li{
                 -2px 0 #7b757b,
                 0 2px #424542;
     padding: 5px 10px;
-    margin: 5px auto;
+    margin: 0 0 5px 20px;
     background: #04009d;
     background: -moz-linear-gradient(top,  #04009d 0%, #06004d 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#04009d), color-stop(100%,#06004d));
@@ -67,9 +58,14 @@ nav li{
     -webkit-animation: initQuest 3s;
     -moz-animation: initQuest 3s;
     animation: initQuest 3s;
-    width: 80%;
-    position: absolute;
-    bottom: 0;
+    width: 100%;
+    position: relative;
+
+    color: #eff1ff;
+    text-shadow: 2px 2px #212421,
+                 1px 1px #212021;
+    font-family: "ffvii", Verdana, sans-serif;
+    font-size: 2em;
 }
 
 @-webkit-keyframes initQuest {
@@ -90,18 +86,8 @@ nav li{
     100% { opacity: 1 }
 }
 
-#questModal *{
-    color: #eff1ff;
-    text-shadow: 2px 2px #212421,
-                    1px 1px #212021;
-    font-family: Verdana, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    margin: 5px 0;
-}
-
 @media screen and (min-width: 768px){
-    #questModal{
+    #questWrapper{
         width: 50%;
     }
 }

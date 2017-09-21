@@ -4,22 +4,22 @@
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main.css">
         <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+        <title>questAdventure</title>
     </head>
     <body>
         <div id="inventorySidebar"></div>
-        <div id="wrapper"><b>click me to build</b>
+        <div class="card-wrapper">
             <nav>
                 <ul>
-                    <li><a href="">quests</a></li>
-                    <li><a href="">about me</a></li>
-                    <li><a href="">gallery</a></li>
-                    <li><a href="">contact me</a></li>
+                    <li><a href="#" onclick="newQuest(); return false;"><b>quests</b></a></li>
+                    <li><b> | </b></li>
+                    <li><a href=""><b>about me</b></a></li>
+                    <li><a href=""><b>gallery</b></a></li>
+                    <li><a href=""><b>contact</b></a></li>
                 </ul>
             </nav>
-            <div id="questWrapper">
-                <div id="questModal"></div>
-            </div>
-        </div>  
+        </div>
+        <div id="questWrapper"></div>
         <script type="text/javascript" src="scripts/main.js"></script>
         <script type="text/javascript" src="scripts/siteBuild.js"></script>
     </body>

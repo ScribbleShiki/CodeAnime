@@ -31,12 +31,14 @@
 
   _adventure.run = true;
 
+  /* will need to wait for user action before sending new text */
   function generateQuestText() {
     for (var i = 0; i < _adventure.gameQuestLog.length; i++) {
-      return _questModal.innerHTML = _adventure.gameQuestLog[i];
+      _questModal.innerHTML = _adventure.gameQuestLog[i];
     }
   }
 
+  /* may have to run async */
   function addQuestText() {
     _questModal.addEventListener('click', generateQuestText(), false);
   }
